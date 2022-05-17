@@ -44,7 +44,7 @@ const NewProduct = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        process.env.REACT_APP_BACKEND_URL + "/products/",
+        process.env.REACT_APP_BACKEND_URL + "products/",
         "POST",
         JSON.stringify({
           title: formState.inputs.title.value,

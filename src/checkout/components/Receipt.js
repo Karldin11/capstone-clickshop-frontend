@@ -41,8 +41,7 @@ const Receipt = (props) => {
 
     try {
       await sendRequest(
-        process.env.REACT_APP_BACKEND_URL +
-          `/checkout/receipts/${auth.userId}/`,
+        process.env.REACT_APP_BACKEND_URL + `checkout/receipts/${auth.userId}/`,
         "POST",
         JSON.stringify({
           address: formState.inputs.address.value,
@@ -59,8 +58,7 @@ const Receipt = (props) => {
     let responseData;
     try {
       responseData = await sendRequest(
-        process.env.REACT_APP_BACKEND_URL +
-          `/checkout/receipts/${auth.userId}/`,
+        process.env.REACT_APP_BACKEND_URL + `checkout/receipts/${auth.userId}/`,
         "GET"
       );
 

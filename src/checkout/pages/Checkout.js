@@ -16,7 +16,7 @@ const Checkout = () => {
       try {
         console.log("before request" + auth.userId);
         const responseData = await sendRequest(
-          process.env.REACT_APP_BACKEND_URL + `/checkout/cart/${auth.userId}`
+          process.env.REACT_APP_BACKEND_URL + `checkout/cart/${auth.userId}`
         );
         console.log("past request" + responseData.orders);
         setLoadedProducts(responseData.orders);

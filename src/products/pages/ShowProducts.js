@@ -12,7 +12,7 @@ const ShowProducts = () => {
     const fetchProducts = async () => {
       try {
         const responseData = await sendRequest(
-          process.env.REACT_APP_BACKEND_URL + "/products"
+          process.env.REACT_APP_BACKEND_URL + "products"
         );
         setLoadedProducts(responseData.products);
       } catch (err) {}
