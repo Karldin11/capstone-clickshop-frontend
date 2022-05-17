@@ -1,7 +1,6 @@
 .modal {
   z-index: 100;
   position: fixed;
-  scroll-behavior: smooth;
   top: 1vh;
   left: 10%;
   width: 90%;
