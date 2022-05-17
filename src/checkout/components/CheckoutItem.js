@@ -25,13 +25,12 @@ const CheckoutItem = (props) => {
       console.log("user id : " + auth.userId + " product:" + props.id);
       await sendRequest(
         process.env.REACT_APP_BACKEND_URL +
-          `/checkout/cart/${auth.userId}/${props.id}`,
+          `checkout/cart/${auth.userId}/${props.id}`,
         "DELETE"
       );
       console.log("element eliminated from orders");
       auth.modifyQuantity(-1);
       console.log(auth.quantity);
-      console.log("element substracted from context");
     } catch (err) {}
 
     history.push("/");

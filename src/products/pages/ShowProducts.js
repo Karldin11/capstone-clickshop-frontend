@@ -5,14 +5,14 @@ import { useHttpClient } from "../../shared/hooks/http-hook";
 import ProductList from "../components/ProductList";
 
 const ShowProducts = () => {
-  const [loadedProducts, setLoadedProducts] = useState();
+  const [loadedProducts, setLoadedProducts] = useState(); //
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         const responseData = await sendRequest(
-          process.env.REACT_APP_BACKEND_URL + "/products"
+          process.env.REACT_APP_BACKEND_URL + "products"
         );
         setLoadedProducts(responseData.products);
       } catch (err) {}

@@ -15,7 +15,7 @@ import { useHttpClient } from "../../shared/hooks/http-hook";
 import "./ProductForm.css";
 
 const NewProduct = () => {
-  const { isLoading, error, sendRequest, clearError } = useHttpClient();
+  const { isLoading, error, sendRequest, clearError } = useHttpClient(); //
   const [formState, inputHandler] = useForm(
     {
       title: {
@@ -44,7 +44,7 @@ const NewProduct = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        process.env.REACT_APP_BACKEND_URL + "/products/",
+        process.env.REACT_APP_BACKEND_URL + "products/",
         "POST",
         JSON.stringify({
           title: formState.inputs.title.value,
