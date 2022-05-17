@@ -31,7 +31,6 @@ const CheckoutItem = (props) => {
       console.log("element eliminated from orders");
       auth.modifyQuantity(-1);
       console.log(auth.quantity);
-      console.log("element substracted from context");
     } catch (err) {}
 
     history.push("/");

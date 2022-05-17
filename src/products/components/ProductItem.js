@@ -35,10 +35,9 @@ const ProductItem = (props) => {
     try {
       await sendRequest(
         process.env.REACT_APP_BACKEND_URL +
-          `checkout/cart/${auth.userId}/${props.id}`,
+          `checkout/cart/${auth.userId}/${props.id}`, //
         "POST"
       );
-      console.log("element added to cart");
       auth.modifyQuantity(1);
       console.log("element added to context");
     } catch (err) {}

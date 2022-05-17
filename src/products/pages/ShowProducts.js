@@ -5,7 +5,7 @@ import { useHttpClient } from "../../shared/hooks/http-hook";
 import ProductList from "../components/ProductList";
 
 const ShowProducts = () => {
-  const [loadedProducts, setLoadedProducts] = useState();
+  const [loadedProducts, setLoadedProducts] = useState(); //
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
 
   useEffect(() => {

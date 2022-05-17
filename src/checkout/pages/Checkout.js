@@ -14,7 +14,6 @@ const Checkout = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        console.log("before request" + auth.userId);
         const responseData = await sendRequest(
           process.env.REACT_APP_BACKEND_URL + `checkout/cart/${auth.userId}`
         );

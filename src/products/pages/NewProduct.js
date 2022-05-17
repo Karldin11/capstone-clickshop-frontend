@@ -15,7 +15,7 @@ import { useHttpClient } from "../../shared/hooks/http-hook";
 import "./ProductForm.css";
 
 const NewProduct = () => {
-  const { isLoading, error, sendRequest, clearError } = useHttpClient();
+  const { isLoading, error, sendRequest, clearError } = useHttpClient(); //
   const [formState, inputHandler] = useForm(
     {
       title: {

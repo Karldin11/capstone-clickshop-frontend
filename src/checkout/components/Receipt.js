@@ -176,8 +176,6 @@ const Receipt = (props) => {
           <h4>Total:{totalAmount}</h4>
         </div>
       </Modal>
-
-      {/* {checkoutState && <NewReceipt total={calcTotalPrice()} />} */}
     </>
   );
 };

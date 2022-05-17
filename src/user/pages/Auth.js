@@ -80,7 +80,6 @@ const Auth = () => {
           administrator.customerProfile();
         }
 
-        console.log(responseData.user.orders.length);
         const quantity = responseData.user.orders.length;
         auth.login(responseData.user.id, quantity);
       } catch (err) {}
