@@ -1,0 +1,7 @@
+.checkout-list {
+  list-style: none;
+  display: flex;
+
+  /* width: 90%;
+  max-width: 40rem; */
+}
